@@ -1,0 +1,53 @@
+
+.button, .file-upload-button, .gsc-cursor-page {
+  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+  -webkit-appearance: none;
+  font-size: 1rem;
+  text-shadow: none;
+  line-height: 1.2;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  padding: 10px 16px;
+  margin: 0 10px 0 0;
+  position: relative;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none !important;
+  cursor: pointer;
+  text-align: center;
+  font-weight: normal !important;
+}
+
+
+.ais-pagination--item {
+  background: none;
+  border: 3px solid #ccc;
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 0 8px;
+  }
+
+  &:hover,
+  &.ais-pagination--item__active{
+    background: #ccc;
+
+    a {
+      color: #000;
+    }
+  }
+
+  
+}
+
+
+.ais-pagination--item__disabled {
+  visibility: hidden;
+  display: none;
+}

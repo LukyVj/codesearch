@@ -1,0 +1,159 @@
+// Hits
+.container {
+  width: calc(100% - #{$nav-width});
+  float: left;
+}
+#hits-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  float: left;
+  width: 100%;
+  // background: red;
+  padding: 0;
+
+  .ais-hits {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+.hit {
+  float: left;
+  border: 5px solid $secondary-color;
+  border-radius: 2px;
+  background: $secondary-color;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.28);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.28);
+  width: calc(33.33% - 16px);
+  margin: 8px 8px;
+  padding: 2px;
+
+  a {
+    color: $tertiary-color;
+    text-decoration: none;
+  }
+
+  .hit--picture-wrapper {
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: linear-gradient(to top, #000 0%, rgba(#000, 0.7) 50%, rgba(black, 0) );
+      transition: all 0.2s ease;
+    }
+
+    .author--avatar {
+      position: absolute;
+      bottom: -36px;
+      right: 16px;
+      z-index: 3;
+      border-radius: 100%;
+      max-width: 72px;
+      border: 7px solid $secondary-color;
+    }
+  }
+
+  .hit--name {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    bottom: 16px;
+    padding: 0px;
+    padding-left: 24px;
+    font-size: 1.2em;
+  }
+
+  
+  .hit--details {
+    float: left;
+    width: 80%;
+    padding: 0 8px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 20%;
+    padding: 0 16px;
+    visibility: hidden;
+
+    p {
+      padding: 0;
+      margin: 8px 0;
+      line-height: 22px;
+      font-weight: bold;
+    }
+  }
+
+  iframe {
+    visibility: hidden;
+    display: none;
+    height: 277px;
+  }
+
+  &:hover {
+    .hit--details {
+      visibility: visible;
+    }
+    .hit--picture-wrapper {
+      &:after {
+        background: linear-gradient(to top, rgba(#000, 0.8), rgba(black, 0.8) );
+      }
+      // img {
+      //   visibility: hidden;
+      //   display: none;
+      // }
+    }
+
+    // iframe {
+    //   display: block;
+    //   visibility: visible;
+    // }
+  }
+
+  .hit--stats {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    line-height: 0;
+    margin: 0.5em 0;
+
+    svg {
+      position: relative;
+      top: 4px; 
+      margin-right: 4px;
+    }
+
+    [class^="stat--"] {
+      padding: 0 4px;
+      text-align: center;
+    }
+  }
+  .hit--author {
+    float: left;
+    width: 100%;
+  }
+}
+
+#pagination-container {
+  width: 100%;
+  float: left;
+}
+
+

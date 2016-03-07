@@ -1,0 +1,31 @@
+.small-icon {
+  width: 22px;
+  display: inline-block;
+  height: 22px;
+
+  use {
+    fill: #fff;
+    stroke: #fff
+  }
+
+  .stat--hearts &{
+    max-width: 18px;
+
+    .hit:hover &{
+      use {
+        fill: tomato;
+        stroke: tomato;
+      }
+    }
+  }
+
+  .stat--views &,
+  .stat--comments &{
+    .hit:hover &{
+      use {
+        fill: $tertiary-color;
+        stroke: $tertiary-color;
+      }
+    }
+  }
+}

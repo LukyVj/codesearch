@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700);
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscaled;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Sans', helvetica neue, helvetica, sans-serif;
+}

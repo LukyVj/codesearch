@@ -1,0 +1,61 @@
+/// Header
+.main-header {
+  background: black;
+  border-bottom: 1px solid #222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: middle;
+  -webkit-align-items: middle;
+  -ms-flex-align: middle;
+  align-items: middle;
+  position: relative;
+  z-index: 11;
+  height: $header-height;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo .large-screen-logo {
+  // background: url(../images/codepen-logo.svg) no-repeat center center/80%;
+  width: 280px;
+  height: $header-height;
+  border: 0;
+  outline: 0;
+  display: block;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  line-height: $header-height;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+
+  svg {
+    max-width: 44px;
+    height: 44px;
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    use {
+      fill: #fff;
+      height: $header-height;
+    }
+  }
+}
+
+
+.container {
+  > header {
+    padding: 0 16px; 
+    border-bottom: 4px solid $tertiary-color;
+    width: calc(100% - 32px);
+    position: relative;
+    margin: 16px;
+  }
+}

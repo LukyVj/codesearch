@@ -1,0 +1,27 @@
+@import 'normalize',
+        'base',
+        'variables',
+        'icons',
+        'header',
+        'nav',
+        'searchbox',
+        'hits',
+        'footer',
+        'buttons';
+
+$main-color: #191919;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+body {
+  background: $main-color;
+  color: #fff;
+}
+
+

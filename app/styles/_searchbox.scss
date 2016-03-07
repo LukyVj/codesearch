@@ -1,0 +1,49 @@
+#search-box {
+  width: 100%;
+  max-width: 420px;
+  
+  .ais-search-box {
+    float: left;
+    width: 100%;
+    position: relative;
+
+    input {
+      color: #fff;
+      text-decoration: none;
+      border: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      position: relative;
+      height: 65px;
+      width: 100%;
+      display: block;  
+      margin-left: 32px;
+      padding: 0 16px;
+      background: #333;
+      outline: none;
+    }
+  }
+}
+
+// Algolia's mark <3 
+.ais-search-box--powered-by {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 16px;
+  z-index: 999;
+  height: 65px;
+  line-height: 62px;
+}
+
+#stats-container {
+  float: left;
+  position: relative;
+  left: 48px;
+  height: $header-height;
+  line-height: $header-height;
+
+  .ais-stats--time {
+    color: $tertiary-color
+  }
+}

@@ -1,0 +1,9 @@
+nav {
+  position: fixed;
+  right: 0;
+  top: $header-height;
+  width: $nav-width;
+  height: calc(100% - #{$header-height});
+  background: $secondary-color;
+
+}
