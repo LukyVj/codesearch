@@ -1,11 +1,13 @@
 @import 'normalize',
         'base',
         'variables',
+        'pagination',
         'icons',
         'header',
         'nav',
         'searchbox',
         'hits',
+        'selects',
         'footer',
         'buttons';
 
@@ -25,3 +27,8 @@ body {
 }
 
 
+.row {
+  width: 100%;
+  float: left;
+  padding: 8px 16px;
+}

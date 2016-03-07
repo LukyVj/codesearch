@@ -30,6 +30,7 @@
   width: calc(33.33% - 16px);
   margin: 8px 8px;
   padding: 2px;
+  min-height: 40vh;
 
   a {
     color: $tertiary-color;
@@ -40,7 +41,7 @@
     float: left;
     width: 100%;
     position: relative;
-    min-height: 200px;
+    min-height: 25vh;
 
     img {
       width: 100%;

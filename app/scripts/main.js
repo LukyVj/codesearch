@@ -17,7 +17,7 @@ var search = instantsearch({
     })
     );
 
-  let hitTemplate = document.getElementById('hitTemplate').innerHTML;
+  var hitTemplate = document.getElementById('hitTemplate').innerHTML;
   search.addWidget(
     instantsearch.widgets.hits({
       container: '#hits-container',
